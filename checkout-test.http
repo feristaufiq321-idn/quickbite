@@ -1,0 +1,15 @@
+
+POST http://localhost:8080/api/checkout
+Content-Type: application/json
+
+{
+  "idPelanggan": "CUST-001",
+  "tokenKartu": "TEST_OK",
+  "metodePembayaran": "KARTU",
+  "keranjang": [
+    {
+      "idMenu": "MENU-01",
+      "jumlah": 2
+    }
+  ]
+}
